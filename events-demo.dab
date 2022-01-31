@@ -1,0 +1,35 @@
+{
+  "Services": {
+    "db": {
+      "Env": [
+        "MYSQL_ROOT_PASSWORD=password",
+        "MYSQL_USER=user",
+        "MYSQL_PASSWORD=password",
+        "MYSQL_DATABASE=demodb"
+      ],
+      "Image": "mysql@sha256:afc453de0d675083ac00d0538521f8a9a67d1cce180d70fab9925ebcc87a0eba",
+      "Networks": [
+        "default"
+      ],
+      "Ports": [
+        {
+          "Port": 3306,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    "web": {
+      "Image": "nginx@sha256:9522864dd661dcadfd9958f9e0de192a1fdda2c162a35668ab6ac42b465f0603",
+      "Networks": [
+        "default"
+      ],
+      "Ports": [
+        {
+          "Port": 80,
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "Version": "0.1"
+}
