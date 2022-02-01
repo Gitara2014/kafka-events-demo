@@ -1,4 +1,4 @@
-package com.bane;
+package com.bane.events.producer.config;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.kafka.core.KafkaTemplate;

@@ -1,4 +1,4 @@
-package com.bane;
+package com.bane.events.consumer.config;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

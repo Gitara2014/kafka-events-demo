@@ -1,4 +1,4 @@
-package com.bane;
+package com.bane.events.producer.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;

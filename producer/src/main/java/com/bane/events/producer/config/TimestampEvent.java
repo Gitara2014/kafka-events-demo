@@ -1,4 +1,4 @@
-package com.bane;
+package com.bane.events.producer.config;
 
 import lombok.AllArgsConstructor;
 

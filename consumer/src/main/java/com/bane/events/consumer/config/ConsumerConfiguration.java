@@ -1,4 +1,4 @@
-package com.bane;
+package com.bane.events.consumer.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -20,7 +20,7 @@ public class ConsumerConfiguration {
 
     @Bean
     public ConsumerFactory<String, TimestampEvent> consumerFactory() {
-        var timestampEventDeserializer = new JsonDeserializer<TimestampEvent>(TimestampEvent.class);
+        var timestampEventDeserializer = new JsonDeserializer<>(TimestampEvent.class);
         timestampEventDeserializer.setRemoveTypeHeaders(false);
         timestampEventDeserializer.addTrustedPackages("*");
         timestampEventDeserializer.setUseTypeMapperForKey(true);

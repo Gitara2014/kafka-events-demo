@@ -1,4 +1,4 @@
-package com.bane;
+package com.bane.events.consumer;
 
 
 import org.springframework.boot.SpringApplication;
